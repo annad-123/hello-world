@@ -1,0 +1,28 @@
+---step 1
+select * from #SQl_anna
+
+IF OBJECT_ID('tempdb..#sql_anna') is not null
+
+begin drop table #sql_anna
+
+  end
+
+ ---creating a table 
+ 
+ CREATE TABLE #APR_final_anna ( wordsstuff varchar(10), APR_AUDITS int , morenumberstuff int ,stuff_with_decimals decimal(3,2),
+
+intnumbers int , numberstuffthree int , deicalneed decimal(3,2) , numbernumber int)
+  
+  
+ -----step 2 the table would now pop up but with no information in it // We woud have to input this data
+  
+  INSERT INTO #SQl_anna( wordsstuff , APR_AUDITS , morenumberstuff,stuff_with_decimals ,
+
+intnumber , numberstuffthree , deicalneed decimal , numbernumber )
+
+VALUES ( 'WORD',12 ,16, 6.10, 37 , 54, 7.18 , 45) 
+
+
+  
+  
+  --these words would now be values in the table 
